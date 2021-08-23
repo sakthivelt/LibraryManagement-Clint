@@ -1,0 +1,14 @@
+.main{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.main>div{
+    min-width: 200px;
+    max-width: 400px;
+    height: 200px;
+    background-color: gray;
+    margin: 20px 20px;
+    flex: 1;
+}
+

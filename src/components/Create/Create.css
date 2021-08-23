@@ -1,0 +1,129 @@
+.create__main{
+    padding: 30px 30px;
+    position: relative;
+    background-color: whitesmoke;
+    border-radius: 45px;
+    max-width: 1000px;
+    height: 85vh;
+    margin: 0 auto;
+    box-shadow: -1px 7px 48px -8px rgba(0,0,0,0.56);
+-webkit-box-shadow: -1px 7px 48px -8px rgba(0,0,0,0.56);
+-moz-box-shadow: -1px 7px 48px -8px rgba(0,0,0,0.56);
+}
+
+.create__mobile__icon{
+    margin-top:12px;
+    position: absolute;
+    bottom: 10px;
+    left: 40%;
+    display: none;
+}
+
+.alert{
+    position: absolute;
+    top:10px;
+    left: 30px;
+    border-radius: 20px;
+}
+
+h1{
+    font-family: 'Carme', sans-serif;
+    font-size: 35px;
+}
+
+.click__me__hidden{
+    display: none;
+}
+.Click__me{
+    display: flex;
+    flex-direction: column;
+    display: block;
+    position: absolute;
+    top: 100px;
+    transition: 2s ease-in-out;
+}
+.ClickMe__img{
+    position: absolute;
+    width:100px;
+    height: 100px;
+    opacity: 0.5;
+}
+.ClickMe__msg{
+    margin-top: 35px;
+    margin-left:15px ;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Parisienne', cursive;
+    color: rgb(48,61,92);
+    opacity: 0.5;
+}
+
+.man{
+    position: absolute;
+    top: 110px;
+    left: -160px;
+    /* width: 410px;
+    height: 410px; */
+    cursor: pointer;
+
+}
+
+
+
+.form{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 100px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.input__feild{
+    display: flex;
+    flex-wrap:wrap ;
+    width: 800px;
+    height: 450px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.input__feild>div{
+    width: 300px;
+    height: 100px;
+    margin: 10px 10px;
+}
+
+
+@media only screen and (max-width: 768px){
+    .man{
+        display: none;
+    }
+    .create__mobile__icon{
+            display: block;
+    }
+    /* .create__main{
+        height: 90vh;        
+    }
+    .create__main{
+        
+        margin: 60px auto;
+    }
+    .form{
+        margin: 0;
+    }*/
+    .input__feild{
+        width: 100%;
+        height: 100vh;
+        margin-left: -50px;
+    } 
+    .create__main{
+        height: 850px;
+    }
+    .form{
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+    
+
+}

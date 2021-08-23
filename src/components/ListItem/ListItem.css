@@ -1,0 +1,54 @@
+.user__list__items{
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    border-radius: 20px;
+    margin: 10px 10px;
+    min-width: 350px;
+    max-width: 370px;
+    height: 150px;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+    box-shadow: -9px -5px 29px -7px rgba(0,0,0,0.44);
+    -webkit-box-shadow: -9px -5px 29px -7px rgba(0,0,0,0.44);
+    -moz-box-shadow: -9px -5px 29px -7px rgba(0,0,0,0.44);
+    /* remove the higlights while click the div on mibile */
+    -webkit-tap-highlight-color: transparent;    
+}
+.user__list__items:hover{
+    box-shadow: -1px 7px 48px -8px rgba(0,0,0,0.56);
+    -webkit-box-shadow: -1px 7px 48px -8px rgba(0,0,0,0.56);
+    -moz-box-shadow: -1px 7px 48px -8px rgba(0,0,0,0.56);
+}
+
+.avather{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35%;
+    height: 150px;
+    /* background: crimson; */
+}
+
+.student__info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 65%;
+    height: 150px;
+    padding-top: 10px;
+}
+
+.student__info>div{
+    width: 100%;
+    height: 40px;
+    color: gray;
+}
+
+
+@media only screen and (max-width: 768px){
+    .user__list__items{
+        min-width: 200px;
+        height: 100px;
+    }
+}

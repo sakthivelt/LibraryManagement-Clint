@@ -1,0 +1,76 @@
+.user__list{
+    padding: 20px 20px;
+    max-width: 1500px;
+    height: 85vh;
+    margin: 0 auto;
+     /* border-radius: 45px; 
+    box-shadow: -1px 7px 48px -8px rgba(0,0,0,0.56);
+    -webkit-box-shadow: -1px 7px 48px -8px rgba(0,0,0,0.56);
+    -moz-box-shadow: -1px 7px 48px -8px rgba(0,0,0,0.56);  */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.search__bar{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    /* width: 1200px; */
+    flex: 1;
+    min-width: 600px;
+    height: 100px;
+    border-radius: 45px; 
+    /* box-shadow: -1px 7px 48px -8px rgba(0,0,0,0.56);
+    -webkit-box-shadow: -1px 7px 48px -8px rgba(0,0,0,0.56);
+    -moz-box-shadow: -1px 7px 48px -8px rgba(0,0,0,0.56);  */
+    /* position: sticky;
+    top: 70px; */
+
+}
+
+.search__bar__item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    max-width: 250px;
+    min-width: 150px;
+    height: 70px;
+    border-radius: 45px;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+    box-shadow: -9px -5px 29px -7px rgba(0,0,0,0.30);
+    -webkit-box-shadow: -9px -5px 29px -7px rgba(0,0,0,0.30);
+    -moz-box-shadow: -9px -5px 29px -7px rgba(0,0,0,0.30); 
+    /* remove the higlights while click the div on mibile */
+    -webkit-tap-highlight-color: transparent;    
+}
+
+.search__bar__item:hover{
+    box-shadow: -1px 7px 48px -8px rgba(0,0,0,0.56);
+    -webkit-box-shadow: -1px 7px 48px -8px rgba(0,0,0,0.56);
+    -moz-box-shadow: -1px 7px 48px -8px rgba(0,0,0,0.56);
+}
+
+@media only screen and (max-width: 768px){
+.search__bar{
+    min-width: 300px;
+    height:150px ;
+}
+
+.search__bar__item{
+    min-width: 100px;
+    height: 55px;
+    margin: 5px 5px;
+}
+
+.search__bar__item:hover{
+    box-shadow: -9px -5px 29px -7px rgba(0,0,0,0.44);
+    -webkit-box-shadow: -9px -5px 29px -7px rgba(0,0,0,0.44);
+    -moz-box-shadow: -9px -5px 29px -7px rgba(0,0,0,0.44); 
+}
+}
+
