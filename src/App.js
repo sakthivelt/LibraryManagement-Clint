@@ -4,16 +4,18 @@ import Dashboard from './Main'
 import { BrowserRouter } from 'react-router-dom';
 // import ContentLoader from "react-content-loader"
 import GmailLoader from "./components/Loader/Loder"
+import CircleLoading from './components/Lottie/CircleLoading'
+
 
 
 function App() {
 
   const [value, setvalue] = useState(false);
-  var nLoaders=[1,2,3,4,5]
 
         useEffect(()=>{
-        console.log('this is useEffect')
-        setvalue(true)
+            setTimeout(function(){
+                  setvalue(true) 
+                  }, 1);
         },[])
 
 
@@ -21,7 +23,7 @@ function App() {
   return (<div className='app'>
 
              <BrowserRouter>
-                   {value?<Dashboard/>:<>{nLoaders.map((item,index)=>{return <GmailLoader key={index}/>})}</>}
+                   {value?<Dashboard/>:<CircleLoading/>}
             </BrowserRouter>        
    </div>
   );

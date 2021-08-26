@@ -10,7 +10,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function Input({lable,setitem,item}) {
+export default function Input({lable,setitem,item,dValue}) {
   const classes = useStyles();
 
   return (
