@@ -1,0 +1,18 @@
+.main{
+    border-radius: 50px;
+    box-shadow: -9px -5px 29px -7px rgba(0,0,0,0.44);
+    -webkit-box-shadow: -9px -5px 29px -7px rgba(0,0,0,0.44);
+    -moz-box-shadow: -9px -5px 29px -7px rgba(0,0,0,0.44);
+    transition: 0.3s ease-in-out;
+}
+
+.main:hover{
+    box-shadow: -1px 7px 48px -8px rgba(0,0,0,0.56),-9px -5px 29px -7px rgba(0,0,0,0.44);
+    -webkit-box-shadow: -9px -5px 29px -7px rgba(0,0,0,0.44),-1px 7px 48px -8px rgba(0,0,0,0.56);
+    -moz-box-shadow: -9px -5px 29px -7px rgba(0,0,0,0.44),-1px 7px 48px -8px rgba(0,0,0,0.56);
+}
+
+.appbar{
+    width: 50%;
+    border-radius: 50px 50px 0 0; 
+}

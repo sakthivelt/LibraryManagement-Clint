@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import InputLabel from '@material-ui/core/InputLabel';
 import MenuItem from '@material-ui/core/MenuItem';
@@ -16,20 +16,24 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function DropDown({lable,DegreeValue,CoursesValues,item,setitem,dValue}) {
+export default function DropDown({lable,DegreeValue,CoursesValues,item,setitem}) {
   var DegreeValue2=["None","UG","PG"];
   var CoursesValues2=[
         "None","Tamil","English","Maths","Computer Science","Physice","commerce"
     ]
 
   const classes = useStyles();
-  const [selectValue, setselectValue] = React.useState('');
+  const [selectValue, setselectValue] = React.useState(item);
 
   const handleChange = (event) => {
     setselectValue(event.target.value);
     setitem(event.target.value)
   };
 
+
+  useEffect(() => {
+      console.log(item)
+  }, [])
  
 
   return (

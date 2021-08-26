@@ -180,7 +180,6 @@ export default function MiniDrawer() {
             <Route path='/UserList' component={UserList}/>
             <Route path='/Status' component={Status}/>
             <Route path='/UserInfo/:id' component={UserInfo}/>
-
           </Switch>
         </div>
       </main>
