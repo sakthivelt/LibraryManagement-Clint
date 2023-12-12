@@ -1,6 +1,6 @@
-# Student Management System 🎓
+# Library Management System 🎓
 
-Student Management System is a web application designed to manage student data. This project is built using React ⚛️, Node.js 🚀, Express, and MongoDB 📊.
+Library Management System is a web application designed to manage student data. This project is built using React ⚛️, Node.js 🚀, Express, and MongoDB 📊.
 
 ## Demo
 
@@ -14,7 +14,7 @@ under service right now !
 
 ## Features
 
-- **Student Data Management**: Efficiently manage and organize student information.
+- **Library Book Management**: Efficiently manage and organize Books information.
 
 - **React**: Built with React ⚛️ to create a dynamic and responsive user interface.
 
